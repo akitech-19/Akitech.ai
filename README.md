@@ -1,0 +1,1 @@
+Akitech — India’s first AI-powered career architect built for students from low-income backgrounds. With luxury design and smart AI, it crafts personalized roadmaps for every dream — from Doctor to Entrepreneur. Experience clarity, mentorship, and innovation — your career, redefined by intelligence.
