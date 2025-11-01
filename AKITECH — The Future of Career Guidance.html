@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///C:/Users/sr/Downloads/code.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKITECH — The Future of Career Guidance</title>
+    <link href="./AKITECH — The Future of Career Guidance_files/css2" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2e003e, #4b0082, #6a0dad); /* Dark violet gradient background */
+            color: #ffffff; /* White text for readability on dark violet background */
+            overflow-x: hidden;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        /* Removed dark overlay for dark violet theme */
+        .section > * {
+            position: relative;
+            z-index: 2;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffd700; /* Golden accent */
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #f0f0f0;
+        }
+        .button {
+            background: linear-gradient(45deg, #ffd700, #ffed4e); /* Golden gradient for buttons */
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for dark violet theme */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 300px;
+            text-align: left;
+            transition: transform 0.3s;
+            color: #ffffff;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .testimonial {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 400px;
+            color: #ffffff;
+        }
+        footer {
+            background: rgba(46, 0, 62, 0.9); /* Dark violet footer */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+        /* Dark/Light Mode Toggle (now toggles to light mode) */
+        .toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .toggle::after {
+            content: '🌙'; /* Moon for dark violet mode default */
+        }
+        body.light-mode {
+            background: linear-gradient(135deg, #ffffff, #f0f0f0, #e0e0e0);
+            color: #000000;
+        }
+        body.light-mode .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: 1;
+        }
+        body.light-mode .card, body.light-mode .testimonial {
+            background: rgba(0, 0, 0, 0.1);
+            color: #000000;
+        }
+        body.light-mode h1, body.light-mode h2, body.light-mode h3, body.light-mode p {
+            color: #000000;
+        }
+        body.light-mode footer {
+            background: rgba(255, 255, 255, 0.9);
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <button class="toggle" onclick="toggleMode()"></button>
+
+    <!-- Hero Section -->
+    <section class="section" id="hero">
+        <h1>Radhe Radhe</h1>
+        <h2>Your Career. Redefined by AI.</h2>
+        <p>Akitech — India’s first AI-powered career architect that analyzes your interests, strengths &amp; future trends to craft a personalized, step-by-step roadmap — whether you dream to be a Doctor, Engineer, IAS, CA, Designer, Entrepreneur, or Researcher.</p>
+        <a href="file:///C:/Users/sr/Downloads/code.html#" class="button">🎯 Get My Free Career Plan</a>
+        <a href="file:///C:/Users/sr/Downloads/code.html#" class="button">🔍 Explore Career Streams</a>
+        <p class="micro-tagline">Luxury in simplicity. Precision in planning.</p>
+    </section>
+
+    <!-- Why Akitech? -->
+    <section class="section" id="why">
+        <h2>Because Your Future Deserves Better Than Random Advice.</h2>
+        <p>Akitech blends Artificial Intelligence + Real Mentorship to guide students from career confusion to clarity, and from dream to execution.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>⿡ AI-Powered Career Match</h3>
+                <p>Get your top 3 career options analyzed through interest, aptitude &amp; market trends.</p>
+            </div>
+            <div class="card">
+                <h3>⿢ Step-by-Step Execution Plan</h3>
+                <p>A full roadmap: exams, courses, skills, timeline, scholarships &amp; internships.</p>
+            </div>
+            <div class="card">
+                <h3>⿣ Smart Progress Tracker</h3>
+                <p>Weekly goals, reminders &amp; success visualization — your AI mentor keeps you on track.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how">
+        <h2>Plan Smarter in Just 4 Steps</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>⿡ Choose Your Stream</h3>
+                <p>Science | Commerce | Arts | Vocational</p>
+            </div>
+            <div class="card">
+                <h3>⿢ Answer Smart Questions</h3>
+                <p>Let AI understand your ambitions.</p>
+            </div>
+            <div class="card">
+                <h3>⿣ Get Personalized Roadmap</h3>
+                <p>From 12th to Dream Career.</p>
+            </div>
+            <div class="card">
+                <h3>⿤ Track. Learn. Evolve.</h3>
+                <p>Monitor your journey with AI updates.</p>
+            </div>
+        </div>
+        <a href="file:///C:/Users/sr/Downloads/code.html#" class="button">Build My Plan Now</a>
+    </section>
+
+    <!-- Explore Careers -->
+    <section class="section" id="explore">
+        <h2>Limitless Paths. One Platform.</h2>
+        <div class="grid">
+            <div class="card">🩺 Medicine &amp; Biotech</div>
+            <div class="card">🏗 Engineering &amp; Robotics</div>
+            <div class="card">💼 Business, CA &amp; Management</div>
+            <div class="card">🧠 Psychology &amp; Social Sciences</div>
+            <div class="card">🎨 Design &amp; Architecture</div>
+            <div class="card">⚖ Law &amp; Civil Services</div>
+            <div class="card">💻 Tech, AI &amp; Data Science</div>
+            <div class="card">🌍 International Careers</div>
+        </div>
+        <p>Explore 50+ top career tracks with real-world insights, salary scope, required exams, and roadmap to get there.</p>
+    </section>
+
+    <!-- Why Students Love Akitech -->
+    <section class="section" id="testimonials">
+        <h2>Because It’s Not Just Guidance — It’s a Revolution.</h2>
+        <div class="grid">
+            <div class="testimonial">
+                <p>“Akitech ne mujhe clear roadmap diya NEET ke liye, step-by-step plan ke sath. Ab mujhe pata hai kya aur kab karna hai.”</p>
+                <p>— Aarav, Class 12 Student (NEET Aspirant)</p>
+            </div>
+            <div class="testimonial">
+                <p>“Main confused thi CA aur MBA ke beech. Akitech ne analysis karke bataya ki mere skills kis path ke liye best hain.”</p>
+                <p>— Riya, Commerce Stream</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Akitech Edge -->
+    <section class="section" id="edge">
+        <div class="grid">
+            <div class="card">🎓 100% Stream Coverage — From Science to Arts, one platform for all.</div>
+            <div class="card">📈 Data-Driven Insights — Real job trends &amp; salary projections.</div>
+            <div class="card">🧭 Global Guidance — For India &amp; Abroad both.</div>
+            <div class="card">🔮 Future-Proof Skills — AI recommends trending certifications.</div>
+            <div class="card">🕰 Time-Based Roadmaps — 1-Year, 3-Year, 5-Year versions.</div>
+        </div>
+    </section>
+
+    <!-- Join the Revolution -->
+    <section class="section" id="join">
+        <h2>🔥 Let AI Design Your Future.</h2>
+        <p>India’s youth deserves clarity, not confusion. Be a part of Akitech — where Artificial Intelligence meets ambition.</p>
+        <a href="file:///C:/Users/sr/Downloads/code.html#" class="button">Start My Free Career Plan</a>
+        <a href="file:///C:/Users/sr/Downloads/code.html#" class="button">Sign Up as Beta Student</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Akitech.ai © 2025<br>Made with 💙 in India | Empowering Students to Think, Plan &amp; Achieve Smarter.<br>By Akshra Yadav</p>
+    </footer>
+
+    <script>
+        // Dark/Light Mode Toggle (now defaults to dark violet, toggles to light)
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
+            const toggle = document.querySelector('.toggle');
+            toggle.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+        }
+
+        // Simple AI Voice Bot Simulation (Placeholder)
+        function initVoiceBot() {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance("Hey, I’m Aki — your AI career buddy.");
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+        window.onload = initVoiceBot;
+    </script>
+
+
+</body></html>
